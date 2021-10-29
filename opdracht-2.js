@@ -13,8 +13,6 @@ function amountOfSoldStock(arrayWithItemInformation) {
 
 // 2B
 
-const mainBody = document.getElementById("mainBodyOfContent");
-
 const showTotalStockSold = document.createElement("h3");
 showTotalStockSold.setAttribute("class", "itemsSold")
 showTotalStockSold.textContent = "Amount of stock sold: " + amountOfSoldStock(inventory);
