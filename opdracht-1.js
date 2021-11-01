@@ -9,7 +9,7 @@ const typeOfTVs = inventory.map((typeOfTV) => {
 // 1B
 
 const soldOutTVs = inventory.filter((soldOutTV) => {
-    if(soldOutTV.sold < soldOutTV.originalStock) {
+    if(soldOutTV.sold === soldOutTV.originalStock) {
         return soldOutTV
     }
 })
