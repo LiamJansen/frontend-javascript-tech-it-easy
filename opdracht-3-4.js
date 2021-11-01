@@ -13,7 +13,14 @@ function showAllBrands(arrayOfObjectsWithBrands) {
     return brandsOfItems;
 }
 
-const allBrands = document.createElement("h3");
-allBrands.textContent = "The brands we work with: " + showAllBrands(inventory);
-
+const allBrands = document.createElement("ul");
+allBrands.setAttribute("id", "brandsList")
 mainBody.appendChild(allBrands);
+
+for (let i = 0; i < brandsOfItems.length; i++) {
+    allBrandsList = document.createElement("li");
+    allBrandsList.textContent = brandsOfItems[i];
+    allBrands.append(allBrandsList);
+}
+
+console.log(typeof(showAllBrands(inventory)));
